@@ -1,0 +1,16 @@
+#palindrome2
+
+sentence = input()
+sentence = sentence.replace(' ','')
+sentence = sentence.lower()
+s = True
+
+for i in range(len(sentence)):
+  a = sentence[i]
+  b = sentence[-i-1]
+  if a != b: 
+   s = False
+if s == True:
+   print('The sentence is a palindrome!')
+elif s == False:
+   print('The sentence is not a palindrome!')
